@@ -1,3 +1,6 @@
-import { test } from './model.js';
+import { fetchStudents } from './database.js';
 
-console.log(test);
+
+fetchStudents((students_data) => {
+    console.log(students_data);
+});
